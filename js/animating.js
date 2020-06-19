@@ -70,8 +70,8 @@ var PageTransitions = (function ($, options) {
         };
 
         var menu = options.menu,
-        pageStart = getActiveSection();
-
+        //pageStart = getActiveSection();
+		pageStart = 'home';	
         location.hash = pageStart;
         var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');
 
